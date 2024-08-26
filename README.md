@@ -1,4 +1,26 @@
-# Finding Donors for Charity using Machine Learning
-In this project, I will employ several supervised algorithms to accurately model individuals' income using data collected from the 1994 U.S. Census. I will then choose the best candidate algorithm from preliminary results and further optimize this algorithm to best model the data. My goal with this implementation is to construct a model that accurately predicts whether an individual makes more than $50,000. This sort of task can arise in a non-profit setting, where organizations survive on donations.  Understanding an individual's income can help a non-profit better understand how large of a donation to request, or whether or not they should reach out to begin with.  While it can be difficult to determine an individual's general income bracket directly from public sources, we can (as we will see) infer this value from other publically available features. 
+# Finding Donors for CharityML Project
 
-The dataset for this project originates from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Census+Income). The datset was donated by Ron Kohavi and Barry Becker, after being published in the article _"Scaling Up the Accuracy of Naive-Bayes Classifiers: A Decision-Tree Hybrid"_. You can find the article by Ron Kohavi [online](https://www.aaai.org/Papers/KDD/1996/KDD96-033.pdf). The data we investigate here consists of small changes to the original dataset, such as removing the `'fnlwgt'` feature and records with missing or ill-formatted entries.
+## Overview
+This project utilizes various supervised machine learning algorithms to predict individuals' income levels using data from the 1994 U.S. Census. The goal is to identify potential donors for a charity by determining if an individual earns more than $50,000 per year. This task is crucial for non-profit organizations as it helps tailor their fundraising strategies more effectively.
+
+## Repository Contents
+- **Jupyter Notebook:** Detailed implementation of machine learning models.
+- **Data File:** `census.csv` - Modified census dataset with relevant features for income prediction.
+- **Visualization Scripts:** Contains custom visualization codes for data analysis.
+
+## Steps in the Analysis
+1. **Data Preprocessing:** Handling skewed features, normalizing numerical features, and encoding categorical variables.
+2. **Model Selection and Evaluation:** Testing various algorithms to find the most effective model.
+3. **Model Optimization:** Using GridSearchCV to fine-tune the best model.
+4. **Feature Importance Analysis:** Identifying key features that impact income prediction.
+
+## Libraries and Tools Used
+- `pandas`, `numpy`: Data manipulation and numerical operations.
+- `matplotlib`, `seaborn`: Data visualization.
+- `sklearn`: Machine learning algorithms, data preprocessing, and model evaluation.
+
+## How to Run the Notebook
+Ensure Python and necessary libraries are installed. Download the dataset and run the Jupyter Notebook to replicate the analysis and view the predictions.
+
+## Results
+The project concludes with a model that can predict with high accuracy whether an individual's income exceeds $50,000. This model helps in understanding the factors influencing higher incomes and aids non-profits in targeting potential donors effectively.
